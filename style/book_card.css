@@ -1,0 +1,124 @@
+.book-progress-card {
+    border: 2px solid var(--very-light-gray);
+    border-radius: 10px;
+    margin: 0 25px 10px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    min-width: 536px;
+
+    & > img {
+        width: 120px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 7px;
+        border: 1px solid var(--very-light-gray);
+    }
+
+    & > div {
+        padding: 0 20px 0 20px;
+        height: 135px;
+    }
+}
+
+.book-progress-title {
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    text-align: left;
+    flex: 1;
+    margin-left: 20px;
+    border-inline: 2px solid var(--very-light-gray);
+
+    & > h3 {
+        & > a {
+            font-size: 18px;
+            color: black;
+            font-weight: 500;
+            width: fit-content;
+        }
+    }
+
+    & > p {
+        color: var(--dark-gray);
+        width: fit-content;
+    }
+}
+
+.book-progress-status {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+    border-right: 2px solid var(--very-light-gray);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--very-light-gray);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--accent-color-secondary);
+    border-radius: 5px 0 0 5px;
+    
+    transition: width 0.3s ease-in-out; 
+}
+
+/* .progress-text {
+    color: var(--dark-gray);
+    text-align: center;
+    margin-top: 5px;
+} */
+
+.book-progress-buttons {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10px;
+
+    & > button {
+        width: 100px;
+        height: 50px;
+        margin: 5px;
+    }
+}
+
+.progress-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.page-input {
+    width: 50px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    text-align: right;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    font-weight: bold;
+    outline: none;
+    padding: 0 5px;
+    transition: border-color 0.2s;
+
+    -moz-appearance: textfield;
+
+    &:hover, &:focus {
+        border-bottom: 1px solid var(--accent-color-secondary);
+        color: black;
+    }
+
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; 
+    }
+}

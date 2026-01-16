@@ -1,0 +1,75 @@
+main {
+    margin-left: 0px;
+    flex: 1;
+    min-width: 540px;
+}
+
+footer {
+    margin-top: 30px;
+    margin-left: 0px;
+    height: 200px;
+    background-color: var(--very-light-gray);
+    min-width: 540px;
+}
+
+.doc-card {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: white;
+    padding: 25px;
+    border-left: 5px solid var(--accent-color-main);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.doc-card, 
+.doc-card p, 
+.doc-card span, 
+.doc-card div,
+.doc-card li {
+    color: var(--dark-gray) !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    font-weight: 400 !important;
+}
+
+.doc-header {
+    font-size: 1.3em !important;
+    color: var(--accent-color-main) !important; /* Verde */
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 700 !important; /* Bold */
+}
+
+.doc-card strong {
+    color: var(--accent-color-main);
+    font-weight: 700 !important;
+}
+
+.doc-list-item {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.doc-list-item.last {
+    margin-bottom: 15px;
+}
+
+code {
+    background-color: var(--very-light-gray);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 15px !important;
+    color: var(--accent-color-tertiary) !important;
+    font-weight: 700 !important;
+    border: 1px solid #e0e0e0;
+}
+
+.buton-proiect {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 200px;
+    height: 50px;
+}
